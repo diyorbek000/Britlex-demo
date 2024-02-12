@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --body-font-family: 'Poppins', sans-serif;
+    --paragraf-colors: rgba(143, 149, 165, 1);
+    --container-max-width: 1120px;
+}
+
+body {
+    font-family: var(--body-font-family);
+}
+
+.container {
+    width: var(--container-max-width);
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    align-items: center;
+}
+
+.container-listes {
+    display: flex;
+    gap: 25px;
+}
+
+.list_item a {
+    color: rgba(38, 50, 56, 1);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--body-font-family);
+
+}
+
+
+
+.btn {
+    border: 2px solid rgba(38, 50, 56, 1);
+    font-size: 24px;
+    width: 220px;
+    height: 70px;
+    background: transparent;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn:focus {
+    transition: .5s;
+    background: rgba(38, 50, 56, 1);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* HEADER PAGE */
+
+.header_page {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header_left_page {
+    width: 420px;
+    position: relative;
+}
+
+.header_position {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.header_text {
+    font-weight: 600;
+    font-size: 44px;
+
+    margin-bottom: 30px;
+}
+
+.header_paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--paragraf-colors);
+    margin-bottom: 30px;
+
+}
+
+.header_btn {
+    font-weight: 400;
+    font-size: 28px;
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+    background: rgba(38, 50, 56, 1);
+    border: none;
+    color: #ffff;
+}
+
+.header_btn:focus {
+    transition: .5s;
+    background: rgb(218, 218, 218);
+    color: #000000;
+    cursor: pointer;
+}
+
+.header_right_page {
+    width: 500px;
+}
+
+.header_image {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* Skills PAGE */
+/*  2-qator   */
+
+.skills_header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: black;
+}
+
+.skills_projects {
+    margin-top: 80px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    margin-left: 10px;
+}
+
+/* SKILLS SPEAKING PAGE */
+
+.skills_speaking_page {
+    width: 325px;
+    height: 100%;
+    background: #F5F5F5;
+    border-radius: 5px;
+}
+
+.speaking_photo {
+    width: 80%;
+    height: 250px;
+    margin-left: 25px;
+    background: #F5F5F5;
+    margin-top: 30px;
+}
+
+.skills_speaking_header {
+    width: 200px;
+    margin-left: 37px;
+    margin-top: 15px;
+}
+
+.skills_speaking_paragraph {
+    width: 270px;
+    height: 150px;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: start;
+    color: #8F95A5;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+.skills_speaking_btn {
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background: #263238;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 35px;
+    margin-top: 80px;
+}
+
+
+
+/* SKILLS WRITING PAGE */
+
+.skills_writing_page {
+    width: 350px;
+    height: 430px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background: #F5F5F5;
+}
+
+.writing_photo {
+    width: 60%;
+    margin-left: 120px;
+}
+
+.skills_writing_header {
+    margin-top: -40px;
+    margin-left: 30px;
+}
+
+.skills_writing_paragraph {
+    width: 300px;
+    height: 70px;
+    font-size: 13px;
+    color: #8F95A5;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.skills_writing_btn {
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background: #263238;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+/* SKILLS READING PAGE */
+
+.skills_reading_page {
+    width: 350px;
+    height: 430px;
+    margin-left: 20px;
+    border-radius: 5px;
+    background: #F5F5F5;
+}
+
+.reading_photo {
+    width: 280px;
+    height: 170px;
+
+}
+
+.skills_reading_header {
+    margin-left: 32px;
+}
+
+.skills_reading_paragraph {
+    width: 300px;
+    height: 90px;
+    margin-left: 32px;
+    font-size: 13px;
+    color: #8F95A5;
+}
+
+.skills_reading_btn {
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background: #263238;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 33px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+/* SKILLS LISTENING PAGE */
+
+.skills_listening_page {
+    border-radius: 10px;
+    width: 720px;
+    height: 250px;
+    margin-top: 158px;
+    margin-left: -370px;
+    background: #F5F5F5;
+    position: absolute;
+}
+
+.listening_photo {
+    width: 300px;
+    height: 200px;
+    margin-left: 400px;
+    margin-top: 25px;
+}
+
+.skills_listening_header {
+    position: relative;
+    width: 130px;
+    bottom: 175px;
+    left: 35px;
+}
+
+.skills_listening_paragraph {
+    position: relative;
+    width: 280px;
+    color: #8F95A5;
+    font-size: 13px;
+    bottom: 165px;
+    left: 35px;
+}
+
+.skills_listening_btn {
+    position: absolute;
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background: #263238;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 33px;
+    bottom: 39px;
+
+}
+
+/* SKILLS FOOTER PAGE */
+
+.skills_footer_page {
+    width: 100%;
+    height: 350px;
+    margin-top: 200px;
+}
+
+.skills_footer_header {
+    width: 250px;
+    height: 50px;
+}
+
+.skills_footer_paragraph {
+    width: 457px;
+    height: 180px;
+    margin-top: 20px;
+    color: #8F95A5;
+    line-height: 23px;
+    font-weight: 200;
+}
+
+.skills_footer_photo {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin-left: 770px;
+    margin-top: -290px;
+}
+
+/* FOOTER NUMBER MENU */
+
+.skills_all_number_info {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    gap: 70px;
+    margin-top: -70px;
+}
+
+/* FOOTER NUMBER INFO-1 */
+.skills_footer_number_1 {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+}
+
+.skills_number_info_1 {
+    color: #2A3246;
+    line-height: 40px;
+}
+
+.skills_number_paragraph_1 {
+    color: #8F95A5;
+}
+
+/* ----------------------- */
+
+/* FOOTER NUMBER INFO-2 */
+.skills_footer_number_2 {
+    text-align: center;
+    width: 70px;
+    height: 70px;
+}
+
+.skills_number_info_2 {
+    color: #2A3246;
+}
+
+.skills_number_paragraph_2 {
+    color: #8F95A5;
+}
+
+/* ----------------------- */
+
+/* FOOTER NUMBER INFO-3 */
+.skills_footer_number_3 {
+    text-align: center;
+    width: 180px;
+    height: 70px;
+}
+
+.skills_number_info_3 {
+    color: #2A3246;
+}
+
+.skills_number_paragraph_3 {
+    color: #8F95A5;
+    width: 170px;
+}
+
+/* ----------------------- */
+
+/* PRICING ALL CARDS */
+
+.pricing_cards {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+/* PRICING PAGE */
+
+.pricing_page {
+    width: 100%;
+    height: 460px;
+    margin-top: 100px;
+}
+
+.pricing_header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* PRICING CARD_1 */
+.pricing_card_1 {
+    width: 350px;
+    height: 458px;
+}
+
+.pricing_wallpaper_1 {
+    width: 250px;
+    height: 250px;
+    margin-left: 47px;
+}
+
+.pricing_header_1 {
+    margin-top: 20px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+.pricing_paragraph_1 {
+    width: 340px;
+    height: 70px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #8F95A5;
+    margin-left: 32px;
+    margin-top: 17px;
+}
+
+.pricing_euro_1 {
+    background: #ebeaea;
+    border-radius: 5px;
+    width: 165px;
+    height: 35px;
+    margin-left: 32px;
+    margin-top: 15px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.pricing_euro_info_1 {
+    position: relative;
+    width: 70px;
+    font-weight: 500;
+    font-size: 23px;
+    bottom: -4px;
+    left: 8px;
+}
+
+.pricing_euro_paragraph_info_1 {
+    position: relative;
+    width: 80px;
+    height: 20px;
+    color: #546269;
+    margin-left: 75px;
+    bottom: 20px;
+}
+
+/* -------------------------- */
+
+/* PRICING PAGE-2 */
+
+.pricing_card_2 {
+    width: 350px;
+    height: 458px;
+}
+
+.pricing_wallpaper_2 {
+    width: 320px;
+    height: 230px;
+    margin-left: 28px;
+}
+
+.pricing_header_2 {
+    margin-top: 20px;
+    width: 280px;
+    height: 30px;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.pricing_paragraph_2 {
+    width: 320px;
+    height: 70px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #8F95A5;
+    margin-left: 32px;
+    margin-top: 17px;
+}
+
+.pricing_euro_2 {
+    background: #ebeaea;
+    border-radius: 5px;
+    width: 165px;
+    height: 35px;
+    margin-left: 32px;
+    margin-top: 35px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.pricing_euro_info_2 {
+    position: relative;
+    width: 70px;
+    font-weight: 500;
+    font-size: 23px;
+    bottom: -4px;
+    left: 8px;
+}
+
+.pricing_euro_paragraph_info_2 {
+    position: relative;
+    width: 80px;
+    height: 20px;
+    color: #546269;
+    margin-left: 85px;
+    bottom: 20px;
+}
+
+/* -------------------------- */
+
+/* PRICING PAGE-3 */
+
+.pricing_card_3 {
+    width: 350px;
+    height: 458px;
+}
+
+.pricing_wallpaper_3 {
+    width: 320px;
+    height: 230px;
+    margin-left: 28px;
+}
+
+.pricing_header_3 {
+    margin-top: 20px;
+    width: 280px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.pricing_paragraph_3 {
+    width: 320px;
+    height: 70px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #8F95A5;
+    margin-left: 32px;
+    margin-top: 17px;
+}
+
+.pricing_euro_3 {
+    background: #ebeaea;
+    border-radius: 5px;
+    width: 165px;
+    height: 35px;
+    margin-left: 32px;
+    margin-top: 35px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.pricing_euro_info_3 {
+    position: relative;
+    width: 70px;
+    font-weight: 500;
+    font-size: 23px;
+    bottom: -4px;
+    left: 8px;
+}
+
+.pricing_euro_paragraph_info_3 {
+    position: relative;
+    width: 80px;
+    height: 20px;
+    color: #546269;
+    margin-left: 85px;
+    bottom: 20px;
+}
+
+/* -------------------------- */
+
+/* PERSON INFO */
+
+.person_info {
+    width: 100%;
+    height: 300px;
+    margin-top: 180px;
+}
+
+.send_photo {
+    width: 300px;
+    height: 300px;  
+}
+
+.person_info_header {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    margin-left: 430px;
+    bottom: 255px;
+}
+
+.person_info_paragraph{
+    position: relative;
+    width: 560px;
+    height: 50px;
+    margin-left: 430px;
+    bottom: 225px;
+    color: #8F95A5;
+}
+
+.person_info_email{
+    border: 1px solid #8F95A5;
+    position: relative;
+    border-radius: 7px;
+    width: 320px;
+    height: 50px;
+    margin-left: 430px;
+    bottom: 200px;
+    color: #8F95A5; 
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+}
+
+.person_info_btn{
+    position: relative;
+    width: 190px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background: #263238;
+    color: #fff;
+    border-radius: 5px;
+    bottom: 250px;
+    left: 760px;
+
+}
+
+/* BOTTOM LINE */
+
+.footer_bottom_line{
+    margin-top: 100px;
+    border: 1px solid #C4C4C4;
+    width: 100%;
+}
+
+.footer_logo{
+    border: 1px solid white;
+    width: 100px;
+    height: 30px;
+    margin-top: 7px;
+}
+
+.footer_agree_info{
+    color: #8F95A5;
+    width: 500px;
+    height: 30px;
+    margin-left: 747px;
+    margin-top: -16px;
+}
